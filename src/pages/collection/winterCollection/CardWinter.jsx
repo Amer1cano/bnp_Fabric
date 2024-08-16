@@ -16,7 +16,9 @@ const CardWinter = ({ item }) => {
         className="hover:text-red-600"
       >
         <img
-          className="h-36 w-48 rounded-xl object-cover"
+          className="h-36 w-48 rounded-xl object-cover 
+          phone:h-40 phone:w-60
+          "
           src={item?.image}
           alt={t('picture from winter collection')}
         />

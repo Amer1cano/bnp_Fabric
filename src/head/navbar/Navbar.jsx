@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import { SlMenu } from "react-icons/sl";
 import { FaXmark } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -42,48 +43,48 @@ const Navbar = () => {
  
 
   return (
-    <div className="p-4 mt-[-3rem]">
+    <div className="p-4">
       <div className='
       miniTablet:flex miniTablet:items-center miniTablet:justify-between 
       bigPhone:flex
       phone:flex
       miniPhone:flex
       '>
-      <a href="/">
-            <img className="w-52 invisible 
-            miniTablet:visible 
-            bigPhone:visible bigPhone:w-52
-            phone:visible phone:w-52
-            miniPhone:visible miniPhone:w-48
+      <NavLink to="/">
+            <img className="w-52 hidden 
+            miniTablet:block 
+            bigPhone:block bigPhone:w-52
+            phone:block phone:w-52
+            miniPhone:block miniPhone:w-48
             " src={logoBrend} alt={t('BrendLogo picture')} />
-      </a>
+      </NavLink>
         <ul className="flex items-center justify-start gap-8 text-xl 
         miniTablet:hidden
         bigPhone:hidden
         phone:hidden
         miniPhone:hidden
         ">
-          <a href="/">
+          <NavLink to="/">
             <img className="w-52" src={logoBrend} alt={t('BrendLogo picture')} />
-          </a>
+          </NavLink>
           <li className="hover:underline underline-offset-8">
-            <a href="/">{t('Home')}</a>
+            <NavLink to="/">{t('Home')}</NavLink>
           </li>
           <li className="hover:underline underline-offset-8">
-            <a href="/collection">{t('Collection')}</a>
+            <NavLink to="/collection">{t('Collection')}</NavLink>
           </li>
           <li className="hover:underline underline-offset-8">
-            <a href="/about">{t('About Us')}</a>
+            <NavLink to="/about">{t('About Us')}</NavLink>
           </li>
           <li className="hover:underline underline-offset-8">
-            <a href="/contacts">{t('Contacts')}</a>
+            <NavLink to="/contacts">{t('Contacts')}</NavLink>
           </li>
         </ul>
-        <button  className={`invisible text-right text-4xl ml-60
-                        miniTablet:visible 
-                        bigPhone:visible bigPhone:ml-40
-                        phone:visible 
-                        miniPhone:visible
+        <button name='btnMenu' className={`hidden text-right text-4xl ml-60
+                        miniTablet:block 
+                        bigPhone:block bigPhone:ml-40
+                        phone:block 
+                        miniPhone:block
                         phone:text-2xl phone:pb-2 phone:ml-36
                         miniPhone:text-2xl miniPhone:pb-2 miniPhone:ml-28
          `}
@@ -97,18 +98,18 @@ const Navbar = () => {
         {
           isMobile &&
         <div>
-          <ul className={`${isMobile? "flex flex-col w-screen absolute z-10 top-24 left-0 text-center text-white   items-center gap-2 py-6  bg-black" : "miniTablet:hidden"}`}>
+          <ul className={`${isMobile? "flex flex-col w-screen absolute z-10 top-[75px] left-0 text-center text-white   items-center gap-2 py-6  bg-black" : "miniTablet:hidden"}`}>
           <li className="  text-xl   hover:underline underline-offset-8  miniTablet:text-3xl">
-          <a  href="/">{t('Home')}</a>
+          <NavLink  to="/">{t('Home')}</NavLink>
             </li>
             <li className=" text-xl hover:underline underline-offset-8  miniTablet:text-3xl">
-            <a href="/collection">{t('Collection')}</a>
+            <NavLink to="/collection">{t('Collection')}</NavLink>
             </li>
             <li className=" text-xl hover:underline underline-offset-8  miniTablet:text-3xl">
-            <a href="/about">{t('About Us')}</a>
+            <NavLink to="/about">{t('About Us')}</NavLink>
             </li>
             <li className=" text-xl hover:underline underline-offset-8  miniTablet:text-3xl">
-            <a href="/contacts">{t('Contacts')}</a> 
+            <NavLink to="/contacts">{t('Contacts')}</NavLink> 
             </li>
           </ul>
         </div>

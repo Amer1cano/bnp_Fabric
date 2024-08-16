@@ -104,7 +104,7 @@ const Collection = () => {
                     ">
                         <form className='mt-16 text-center' onSubmit={(e) => e.preventDefault()}>
                             <input
-                                className='py-4 px-8 pr-3 text-xl bg-gray-200 outline-none rounded-full
+                                className='py-4 px-8 pr-3 text-xl bg-gray-200 outline-none rounded-full mr-[20rem]
                                 miniDesktop:px-3 miniDesktop:pr-1 miniDesktop:py-3
                                 bigTablet:px-2 bigTablet:pr-1 bigTablet:py-3
                                 tablet:px-20 tablet:w-full tablet:py-3
@@ -119,11 +119,14 @@ const Collection = () => {
                                 placeholder={t('Search here')}
                             />
                             <button
-                                className='text-white text-3xl bg-red-500 hover:text-white relative  top-2 left-[-4rem] hover:bg-red-900 duration-500 transition-all py-2 px-2 rounded-full shadow-red-3xl
+                                className='text-white text-3xl bg-red-500 hover:text-white relative  top-2 left-[-24rem] hover:bg-red-900 duration-500 transition-all py-2 px-2 rounded-full shadow-red-3xl
+                                desktop:left-[-4rem] desktop:top-[-3.3rem]
+                                miniDesktop:left-[-4rem] miniDesktop:top-[-3.1rem]
+                                bigTablet:left-[-3rem] bigTablet:top-[-3rem]
                                 tablet:left-[18rem] tablet:top-[-3rem]
                                 miniTablet:left-[12rem] miniTablet:top-[-3rem]
                                 bigPhone:left-[8rem] bigPhone:top-[-3rem]
-                                phone:left-[6rem] phone:top-[-3rem]
+                                phone:left-[8rem] phone:top-[-3rem]
                                 miniPhone:left-[5rem] miniPhone:top-[-3rem]
                                 '
                                 type="button"

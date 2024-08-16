@@ -17,6 +17,7 @@ const CardAutumn = ({ item }) => {
                 <img
                     className="h-36 w-48 rounded-xl object-cover 
                     bigPhone:h-48 bigPhone:w-60
+                    phone:h-40 phone:w-60
                     "
                     src={item?.image}
                     alt={t('picture from winter collection')}

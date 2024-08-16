@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import {  useNavigate} from 'react-router-dom';
 import brendLogo from '../../public/other-images/logoBrend.png';
 import { useTranslation } from 'react-i18next';
 
@@ -8,8 +8,9 @@ const Footer = () => {
     const myPhoneNumber2 = '+998 93 383 75 85';
     const navigate = useNavigate();
 
-    const handleSubmit = () => {
-        navigate("/contacts");
+    const handleSubmit = (event) => {
+            event.preventDefault()
+            navigate('/contacts')
     }
 
     return (

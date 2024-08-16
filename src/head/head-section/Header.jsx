@@ -26,7 +26,7 @@ const Header = () => {
   }, [images.length]);
 
   return (
-    <div className='p-4 m-auto mt-[-3rem]'>
+    <div className='p-4 m-auto mt-[-1rem]'>
       <div className='bg-black  opacity-80 rounded-2xl pl-28 flex items-center justify-between 
       miniTablet:pl-0
       bigPhone:pl-0

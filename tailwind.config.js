@@ -13,6 +13,7 @@ export default {
       'tablet':{'min': '768px', 'max' : '992px'},
       'bigTablet':{'min': '992px', 'max' : '1024px'},
       'miniDesktop':{'min': '1024px', 'max' : '1200px'},
+      'desktop':{'min': '1200px', 'max' : '1320px'},
       
     },
     extend: {

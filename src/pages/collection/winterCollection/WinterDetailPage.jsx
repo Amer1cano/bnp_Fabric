@@ -261,8 +261,8 @@ const WinterDetailPage = () => {
                                     tablet:w-[15rem]
                                     miniTablet:w-[14rem]
                                     bigPhone:w-[20rem] bigPhone:pr-4 bigPhone:ml-0
-                                    phone:w-[10rem] phone:ml-0 phone:pr-3
-                                    miniPhone:w-[10rem] miniPhone:ml-0 miniPhone:pr-2
+                                    phone:w-[16rem] phone:ml-0 phone:pr-2   
+                                    miniPhone:w-[14rem] miniPhone:ml-0 miniPhone:pr-2
                                     "
                                 />
                                 <textarea
